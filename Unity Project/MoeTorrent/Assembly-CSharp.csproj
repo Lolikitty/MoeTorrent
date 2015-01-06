@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{A22EC21C-70D1-8714-AEA1-23C7893229DE}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_1;UNITY_4_6;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Main.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\AssemblyInfo.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\BigInteger.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\DhtEngine.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\EventArgs\NodeAddedEventArgs.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\EventArgs\NodeFoundEventArgs.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\EventArgs\SendMessageEventArgs.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\EventArgs\TaskCompleteEventArgs.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\Listeners\DhtListener.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\Message.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\MessageException.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\MessageFactory.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\MessageLoop.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\Messages\Errors\ErrorMessage.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\Messages\Queries\AnnouncePeer.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\Messages\Queries\FindNode.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\Messages\Queries\GetPeers.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\Messages\Queries\Ping.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\Messages\Queries\QueryMessage.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\Messages\Responses\AnnouncePeerResponse.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\Messages\Responses\FindNodeResponse.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\Messages\Responses\GetPeersResponse.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\Messages\Responses\PingResponse.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\Messages\Responses\ResponseMessage.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\Nodes\Node.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\Nodes\NodeId.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\Nodes\NodeState.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\Nodes\TokenManager.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\RoutingTable\Bucket.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\RoutingTable\RoutingTable.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\Tasks\AnnounceTask.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\Tasks\GetPeersTask.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\Tasks\ITask.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\Tasks\InitialiseTask.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\Tasks\RefreshBucketTask.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\Tasks\ReplaceNodeTask.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\Tasks\SendMessageTask.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\Tasks\Task.cs" />
+     <Compile Include="Assets\MonoTorrent.Dht\TransactionId.cs" />
+     <Compile Include="Assets\MonoTorrent\AssemblyInfo.cs" />
+     <Compile Include="Assets\MonoTorrent\BanLists\BanList.cs" />
+     <Compile Include="Assets\MonoTorrent\BanLists\ListParser.cs" />
+     <Compile Include="Assets\MonoTorrent\BanLists\RangeCollection.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.BEncoding\BEncodedDictionary.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.BEncoding\BEncodedList.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.BEncoding\BEncodedNumber.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.BEncoding\BEncodedString.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.BEncoding\BEncodingException.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.BEncoding\IBEncodedValue.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.BEncoding\RawReader.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\AllowedFastAlgorithm.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\AsyncConnectState.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\AsyncIOState.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Block.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\ClientEngine.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\ConnectionListeners\IListener.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\ConnectionListeners\Listener.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\ConnectionListeners\LocalPeerListener.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\ConnectionListeners\PeerListener.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\ConnectionListeners\SocketListener.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\ConnectionListeners\UdpListener.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Encryption\BigInteger\BigInteger.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Encryption\EncryptedSocket.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Encryption\EncryptionTypes.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Encryption\EncryptorFactory.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Encryption\IEncryption\IEncryption.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Encryption\IEncryption\NullEncryption.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Encryption\IEncryption\RC4.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Encryption\IEncryption\RC4Header.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Encryption\IEncryptor\IEncryptor.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Encryption\ModuloCalculator.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Encryption\PeerAEncryption.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Encryption\PeerBEncryption.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\EventArgs\AnnounceResponseEventArgs.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\EventArgs\AttemptConnectionEventArgs.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\EventArgs\BlockEventArgs.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\EventArgs\CriticalExceptionEventArgs.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\EventArgs\DhtPeersAdded.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\EventArgs\LocalPeersAdded.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\EventArgs\MessageEventArgs.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\EventArgs\NewConnectionEventArgs.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\EventArgs\PeerAddedEventArgs.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\EventArgs\PeerConnectionEventArgs.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\EventArgs\PeerConnectionFailedEventArgs.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\EventArgs\PeerEventArgs.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\EventArgs\PeerExchangePeersAdded.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\EventArgs\PeersAddedEventArgs.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\EventArgs\PeersFoundEventArgs.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\EventArgs\PieceHashedEventArgs.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\EventArgs\ScrapeResponseEventArgs.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\EventArgs\StateUpdateEventArgs.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\EventArgs\TorrentEventArgs.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\EventArgs\TorrentStateChangedEventArgs.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\EventArgs\TrackerPeersAdded.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\EventArgs\TrackerRequestEventArgs.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\EventArgs\TrackerStateChangedEventArgs.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Exceptions\ConnectionException.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Exceptions\ListenerException.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Exceptions\MessageException.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Exceptions\ProtocolException.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Exceptions\TorrentLoadException.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\FastResume\FastResume.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\FileStreamBuffer.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\IDhtEngine.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Logger.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\MainLoop.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Managers\BufferManager.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Managers\ChokeUnchokeManager.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Managers\ConnectionManager.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Managers\ConnectionMonitor.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Managers\DiskManager.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Managers\InactivePeerManager.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Managers\ListenManager.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Managers\LocalPeerManager.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Managers\PeerExchangeManager.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Managers\PeerManager.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Managers\PieceManager.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Managers\TorrentManager.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Managers\TrackerManager.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\FastPeerExtensions\AllowedFastMessage.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\FastPeerExtensions\HaveAllMessage.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\FastPeerExtensions\HaveNoneMessage.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\FastPeerExtensions\IFastPeerMessage.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\FastPeerExtensions\RejectRequestMessage.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\FastPeerExtensions\SuggestPieceMessage.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\IMessage.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\LibtorrentMessages\ExtendedHandshakeMessage.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\LibtorrentMessages\ExtensionSupports.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\LibtorrentMessages\LTChat.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\LibtorrentMessages\LTMetadata.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\LibtorrentMessages\LTSupport.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\LibtorrentMessages\LibtorrentMessage.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\Message.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\MessageBundle.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\PeerMessage.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\StandardMessages\BitfieldMessage.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\StandardMessages\CancelMessage.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\StandardMessages\ChokeMessage.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\StandardMessages\HandshakeMessage.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\StandardMessages\HaveMessage.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\StandardMessages\InterestedMessage.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\StandardMessages\KeepAliveMessage.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\StandardMessages\NotInterestedMessage.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\StandardMessages\PieceMessage.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\StandardMessages\PortMessage.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\StandardMessages\RequestMessage.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\StandardMessages\UnchokeMessage.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\UdpTrackerMessages\AnnounceMessage.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\UdpTrackerMessages\AnnounceResponseMessage.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\UdpTrackerMessages\ConnectMessage.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\UdpTrackerMessages\ConnectResponseMessage.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\UdpTrackerMessages\ErrorMessage.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\UdpTrackerMessages\Extensions\AuthenticationMessage.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\UdpTrackerMessages\MessageType.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\UdpTrackerMessages\ScrapeDetails.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\UdpTrackerMessages\ScrapeMessage.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\UdpTrackerMessages\ScrapeResponseMessage.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\UdpTrackerMessages\UdpTrackerMessage.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\UnknownMessage.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Messages\uTorrent\PeerExchangeMessage.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Modes\DownloadMode.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Modes\ErrorMode.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Modes\HashingMode.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Modes\InitialSeedingMode.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Modes\MetadataMode.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Modes\Mode.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Modes\PausedMode.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Modes\StoppedMode.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Modes\StoppingMode.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\NetworkIO.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\NetworkIO\ReceiveMessageState.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\NetworkIO\State.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\NullDhtEngine.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\PeerConnections\ConnectionFactory.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\PeerConnections\HTTPConnection.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\PeerConnections\HttpRequestData.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\PeerConnections\IConnection.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\PeerConnections\IPV6Connection.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\PeerConnections\PeerId.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\PeerConnections\TCPConnection.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\PeerIO.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Peers\Peer.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Peers\PeerList.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Piece.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\PiecePicking\EndGamePicker.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\PiecePicking\EndGameSwitcher.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\PiecePicking\IgnoringPicker.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\PiecePicking\LoggingPicker.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\PiecePicking\NullPicker.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\PiecePicking\PiecePicker.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\PiecePicking\PriorityPicker.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\PiecePicking\RandomisedPicker.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\PiecePicking\RarestFirstPicker.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\PiecePicking\SlidingWindowPicker.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\PiecePicking\SortedList.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\PiecePicking\StandardPicker.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\PieceWriter\DiskWriter.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\PieceWriter\IPieceWriter.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\PieceWriter\MemoryWriter.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\PieceWriter\NtfsSparseFile.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\PieceWriter\PieceData.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\PieceWriter\PieceWriter.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\RateLimiters\DiskWriterLimiter.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\RateLimiters\IRateLimiter.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\RateLimiters\PauseLimiter.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\RateLimiters\RateLimiter.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\RateLimiters\RateLimiterGroup.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Settings\EngineSettings.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Settings\TorrentSettings.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Tasks\DelegateTask.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Tasks\Task.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\TorrentFileStream.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Tracker\AnnounceParameters.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Tracker\HTTPTracker.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Tracker\ITracker.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Tracker\ScrapeParameters.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Tracker\Tracker.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Tracker\TrackerConnectionId.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Tracker\TrackerFactory.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Tracker\TrackerTier.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Tracker\UdpTracker.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\TransferType.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Unchokers\IUnchoker.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Unchokers\InitialSeedUnchoker.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\Unchokers\Unchoker.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Client\WaitHandleGroup.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Common\AsyncResult.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Common\BitField.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Common\Cache.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Common\Check.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Common\EditableTorrent.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Common\Enums.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Common\EventArgs\TorrentCreatorEventArgs.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Common\FileMapping.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Common\HashAlgoFactory.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Common\Hashes.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Common\ICacheable.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Common\IFileSource.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Common\InfoHash.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Common\MagnetLink.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Common\MonoTorrentCollectionBase.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Common\PeerID.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Common\RawTrackerTier.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Common\RawTrackerTiers.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Common\SpeedMonitor.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Common\TimeoutDispatcher.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Common\ToolBox.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Common\Torrent.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Common\TorrentCreator.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Common\TorrentCreatorAsyncResult.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Common\TorrentEditor.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Common\TorrentException.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Common\TorrentFile.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Common\TorrentFileSource.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Common\UriHelper.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Common\UriQueryBuilder.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Common\VersionInfo.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.TorrentWatchers\ITorrentWatcher.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.TorrentWatchers\TorrentFolderWatcher.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.TorrentWatchers\TorrentWatcherEventArgs.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.TorrentWatchers\TorrentWatchers.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Tracker\EventArgs\AnnounceEventArgs.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Tracker\EventArgs\PeerEventArgs.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Tracker\EventArgs\ScrapeEventArgs.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Tracker\EventArgs\TimedOutEventArgs.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Tracker\Exceptions\TrackerException.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Tracker\Frontend\AnnounceParameters.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Tracker\Frontend\ScrapeParameters.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Tracker\IPAddressComparer.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Tracker\ITrackable.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Tracker\InfoHashTrackable.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Tracker\Listeners\HttpListener.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Tracker\Listeners\ListenerBase.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Tracker\Listeners\ManualListener.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Tracker\Listeners\UdpListener.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Tracker\Peer.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Tracker\RequestMonitor.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Tracker\RequestParameters.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Tracker\SimpleTorrentManager.cs" />
+     <Compile Include="Assets\MonoTorrent\MonoTorrent.Tracker\Tracker.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipItems.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipRandomItem.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UICursor.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UIEquipmentSlot.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UIItemSlot.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UIItemStorage.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UIStorageSlot.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\System\InvAttachmentPoint.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\System\InvBaseItem.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\System\InvDatabase.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\System\InvEquipment.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\System\InvGameItem.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\System\InvStat.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\ChatInput.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\DownloadTexture.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\EnvelopContent.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\ExampleDragDropItem.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\ExampleDragDropSurface.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\LagPosition.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\LagRotation.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\LoadLevelOnClick.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\LookAtTarget.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\OpenURLOnClick.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\PanWithMouse.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\PlayIdleAnimations.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\SetColorOnSelection.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\Spin.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\SpinWithMouse.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\Tutorial5.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\UISliderColors.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\WindowAutoYaw.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\WindowDragTilt.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\LanguageSelection.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\TypewriterEffect.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIButton.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonActivate.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonColor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonKeys.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonMessage.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonOffset.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonRotation.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonScale.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UICenterOnChild.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UICenterOnClick.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragCamera.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragDropContainer.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragDropItem.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragDropRoot.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragObject.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragResize.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragScrollView.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIDraggableCamera.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIEventTrigger.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIForwardEvents.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIGrid.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIImageButton.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIKeyBinding.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIKeyNavigation.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIPlayAnimation.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIPlaySound.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIPlayTween.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIPopupList.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIProgressBar.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UISavedOption.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIScrollBar.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIScrollView.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UISlider.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UISoundVolume.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UITable.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIToggle.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIToggledComponents.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIToggledObjects.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIWidgetContainer.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIWrapContent.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\ActiveAnimation.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\AnimationOrTween.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\BMFont.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\BMGlyph.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\BMSymbol.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\BetterList.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\ByteReader.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\EventDelegate.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\Localization.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\NGUIDebug.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\NGUIMath.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\NGUIText.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\NGUITools.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\PropertyBinding.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\PropertyReference.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\RealTime.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\SpringPanel.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\UIBasicSprite.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\UIDrawCall.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\UIEventListener.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\UIGeometry.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\UIRect.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\UISnapshotPoint.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\UIWidget.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\AnimatedAlpha.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\AnimatedColor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\AnimatedWidget.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\SpringPosition.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenAlpha.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenColor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenFOV.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenHeight.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenOrthoSize.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenPosition.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenRotation.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenScale.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenTransform.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenVolume.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenWidth.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\UITweener.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UI2DSprite.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UI2DSpriteAnimation.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UIAnchor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UIAtlas.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UICamera.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UIFont.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UIInput.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UIInputOnGUI.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UILabel.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UILocalize.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UIOrthoCamera.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UIPanel.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UIRoot.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UISprite.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UISpriteAnimation.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UISpriteData.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UIStretch.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UITextList.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UITexture.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
+     <Compile Include="Assets\Top10Listener.cs" />
+     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
+     <None Include="Assets\NGUI\ReadMe - 3.7.7.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 2.shader" />
+     <None Include="Assets\NGUI\Examples\Models\Orc\Orc Skin.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo20.txt" />
+     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo14.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 1.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored (TextureClip).shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed) (TextureClip).shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 2.shader" />
+     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Masked Colored.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 3.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (TextureClip).shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 1.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 3.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 2.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 3.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 2.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 1.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 1.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 3.shader" />
+     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Additive Colored.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Header.txt" />
+     <None Include="Assets\NGUI\Examples\Shaders\Refractive.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text (TextureClip).shader" />
+     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Normal.txt" />
+     <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
+     <None Include="Assets\NGUI\Examples\Resources\Localization.txt" />
+     <None Include="Assets\MonoTorrent\MonoTorrent.Client\CodeRoadmap.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.Security">
+ <HintPath>C:/Users/Loli/Documents/New Unity Project 23/Assets/MonoTorrent/MonoTorrent.Client/Mono.Security.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
