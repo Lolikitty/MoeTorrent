@@ -1,8 +1,8 @@
-## MoeTorrent (萌種子)
+## MoeTorrent (種子)
 
 介紹：
 
-MoeTorrent 是由 Lolilab (蘿莉實驗室) 所設計，是一種 P2P 的 BT 工具。
+MoeTorrent 是由 Lolilab 所研發，是一種 P2P 的 BT 工具。
 
 當初 Lolilab 研究人員 經常下載開放原始碼專案進行研究 (Linux )，但在下載過程中非常的無趣，只有漫長的等待
 
