@@ -1,4 +1,4 @@
-## MoeTorrent (種子)
+## MoeTorrent (萌種子)
 
 介紹：
 
